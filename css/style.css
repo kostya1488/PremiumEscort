@@ -925,6 +925,10 @@
             color: #ffffff;
         }
         
+        .anketa input.error {
+            border-bottom: 2px solid rgb(131, 34, 34);
+        }
+        
         .s-opacity {
             max-width: 50%;
             display: table-cell;
@@ -1595,6 +1599,17 @@
             border-bottom-style: dotted;
         }
         
+        .aboutSectionButton {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 85px;
+        }
+        
+        .aboutSectionButton a {
+            margin: 0 10px;
+        }
+        
         .mb_110 {
             margin-bottom: 110px;
         }
@@ -1941,12 +1956,26 @@
             display: none !important;
         }
         
-        .anketa input.error {
-            border-bottom: 2px solid rgb(62, 105, 185);
-        }
-        
         #anketaAfterSend {
             display: none;
+            margin: 80px 0;
+        }
+        
+        #fprofile {
+            display: block;
+        }
+        
+        .sendmess {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sendmess p {
+            color: #fff;
+            font-size: 14px;
         }
         /* Contacts style*/
         
@@ -3232,6 +3261,9 @@
                 background-image: linear-gradient(to top, black 0%, transparent 70%), url(../img/head_about2.jpg)!important;
                 background-position-x: 68%;
                 background-size: auto 100%;
+            }
+            .sendmess div {
+                margin-bottom: 20px;
             }
         }
         
