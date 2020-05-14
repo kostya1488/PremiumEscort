@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,18 +19,19 @@
     <!-- Website Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<!--::header part start::-->
-<header class="main_menu home_menu">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-12">
-                <nav class="navbar navbar-expand-xl navbar-dark">
-                    <a class="d-none d-xl-block navbar-brand hh" href="#home">PREMIUM<span>ESCORT
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-xl navbar-dark">
+                        <a class="d-none d-xl-block navbar-brand hh" href="#home">PREMIUM<span>ESCORT
                         <div class="disc">ЭСКОРТ АГЕНТСТВО</div></span></a>
-                    <a class="d-xl-none navbar-brand-mob hh" href="#home">PREMIUM ESCORT</a>
-                    <div class="row mob-menu-icons">
-<!--                        <a class="hh" type="button" href="#anketa">
+                        <a class="d-xl-none navbar-brand-mob hh" href="#home">PREMIUM ESCORT</a>
+                        <div class="row mob-menu-icons">
+                            <!--                        <a class="hh" type="button" href="#anketa">
                           <img alt="" src="img/icon/test.svg">
                       </a>
                     <button class="navbar-toggler menu-icon" type="button" data-toggle="collapse"
@@ -37,221 +39,230 @@
                               aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button> -->
-                        <button type="button" class="btn btn-link navbar-toggle collapsed menu-icon" data-toggle="modal" data-target="#menuModal" aria-controls="navbarSupportedContent" aria-expanded="false">
+                            <button type="button" class="btn btn-link navbar-toggle collapsed menu-icon" data-toggle="modal" data-target="#menuModal" aria-controls="navbarSupportedContent" aria-expanded="false">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                    </div>
-                    <div class="collapse navbar-collapse main-menu-item justify-content-center"
-                         id="navbarSupportedContent">
-                        <ul class="navbar-nav menu align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="about.html">Об агентстве</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="advantages.html">Почему мы?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="requirements.html">Требования</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html#reviews">Отзывы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html#contacts">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu_right_block">
-                        <div class="hidden menu_right_item">
-                            <a class="info-contacts d-none d-lg-block" data-toggle="modal" href="#ModalPhones"><img alt="" src="img/icon/phone-call.svg"> +38 (067) 123 45 67</a>
-                            <a class="order-callback" data-toggle="modal" href="#ModalCallback">Заказать звонок</a>
                         </div>
-                        <a class="boot" data-toggle="modal" href="#ModalAnketa">Заполнить анкету</a>
-                    </div>
-                </nav>
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav menu align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="about.html">Об агентстве</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="advantages.html">Почему мы?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="requirements.html">Требования</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_right_block">
+                            <div class="hidden menu_right_item">
+                                <a class="info-contacts d-none d-lg-block" data-toggle="modal" href="#ModalPhones"><img alt="" src="img/icon/phone-call.svg"> +38 (067) 123 45 67</a>
+                                <a class="order-callback" data-toggle="modal" href="#ModalCallback">Заказать звонок</a>
+                            </div>
+                            <a class="boot" data-toggle="modal" href="#ModalAnketa">Заполнить анкету</a>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- Header part end-->
-<!-- Mobile Menu start -->
-<!-- FULLSCREEN MODAL CODE (.fullscreen) -->
-<div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999">
-    <div class="modal-dialog">
-        <div class="modal-content" style="color:#fff;">
-            <div class="modal-header" style="border:0;">
-                <button type="button" class="btn btn-link menu-close" data-dismiss="modal" ><img src="./img/icon/close.svg"></button>
+    </header>
+    <!-- Header part end-->
+    <!-- Mobile Menu start -->
+    <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+    <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999">
+        <div class="modal-dialog">
+            <div class="modal-content" style="color:#fff;">
+                <div class="modal-header" style="border:0;">
+                    <button type="button" class="btn btn-link menu-close" data-dismiss="modal"><img src="./img/icon/close.svg"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <ul style="list-style-type:none;">
+                        <li><a class="nav-link" href="index.html">Главная</a></li>
+                        <li><a class="nav-link active" href="about.html">Об агентстве</a></li>
+                        <li><a class="nav-link" href="advantages.html">Почему мы?</a></li>
+                        <li><a class="nav-link" href="requirements.html">Требования</a></li>
+                        <li><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li><a class="nav-link" href="index.html#reviews">Отзывы</a></li>
+                        <li><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <a class="boot boot-mob-menu" href="index.html#anketa">Заполнить анкету</a>
             </div>
-            <div class="modal-body text-center">
-                <ul style="list-style-type:none;">
-                    <li><a class="nav-link" href="index.html">Главная</a></li>
-                    <li><a class="nav-link active" href="about.html">Об агентстве</a></li>
-                    <li><a class="nav-link" href="advantages.html">Почему мы?</a></li>
-                    <li><a class="nav-link" href="requirements.html">Требования</a></li>
-                    <li><a class="nav-link" href="faq.html">FAQ</a></li>
-                    <li><a class="nav-link" href="index.html#reviews">Отзывы</a></li>
-                    <li><a class="nav-link" href="index.html#contacts">Контакты</a></li>
-                </ul>
-            </div>
-            <a class="boot boot-mob-menu" href="index.html#anketa">Заполнить анкету</a>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.fullscreen -->
-<!-- Mobile Menu end -->
-<!-- banner part start-->
-<section id="home" class="banner_part about">
-    <div class="container align-items-center">
-        <div class="head-text-about">
-            <span>Кто мы?</span>
-            <p>Мы - компания, оказывающая качественные услуги по предоставлению эскорт - услуг, а также подбору и предоставлению персонала в любых направлениях эскортного и модельного бизнеса, который станет для вас надежным партнером, а сотрудничество с которым будет выгодным.</p><br>
-            <a class="boot hh" href="#about">Подробнее</a>
-            <a style="margin-left: 20px" class="boot d-none d-sm-inline-flex" href="advantages.html">Почему мы?</a>
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal-dialog -->
     </div>
-    <div class="head-mouse">
-        <div class="mousey" onClick="document.location='#about'">
-            <div class="scroller"></div>
-        </div>
-    </div>
-</section>
+    <!-- /.fullscreen -->
+    <!-- Mobile Menu end -->
     <!-- banner part start-->
-<!-- about us part start-->
-<section id="about" class="feature_part">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 section_tittle text-center">О нашем агентстве</div>
-        </div>
-        <div class="about-us-desc d-none d-sm-block justify-content-center">
-            В современном мире работа в эскорте одна из самых высокооплачиваемых и престижных, ведь таких девушек часто приравнивают к профессиональным моделям. Если девушка смогла побороть в себе чувство неловкости и обратилась в эскорт агентство, то, значит, то она считает себя более или менее привлекательной, а это, уже хорошо. Наше эскорт агентство является одним из ведущих в Украине и имеет заслуженную популярность среди почитателей элитного эскорта. Многолетний опыт в сфере оказания эскорт услуг не заставит вас сомневаться в нашем профиссионализме. Все модели Premium Escort работают с большим удовольствием, так как мы имеем широкую базу состоятельных клиентов и даем возможность зарабатывать немалые деньги. Также, стоит отметить, что мы беспокоимся о наших моделях, предоставляя им надёжную защиту и полную конфиденциальность. Нашей задачей является помочь девушкам легко и безопасно заработать много денег.
-        </div>
-        <div class="about-us-desc d-block d-sm-none justify-content-center">
-            <p> В современном мире работа в эскорте одна из самых высокооплачиваемых и престижных, ведь таких девушек часто приравнивают к профессиональным моделям. Если девушка смогла побороть в себе чувство неловкости и обратилась в эскорт агентство, то, значит, то она считает себя более или менее привлекательной, а это, уже хорошо.</p><br><p>Наше эскорт агентство является одним из ведущих в Украине и имеет заслуженную популярность среди почитателей элитного эскорта. Многолетний опыт в сфере оказания эскорт услуг не заставит вас сомневаться в нашем профиссионализме. Все модели Premium Escort работают с большим удовольствием, так как мы имеем широкую базу состоятельных клиентов и даем возможность зарабатывать немалые деньги.</p><br>
-            <p>Также, стоит отметить, что мы беспокоимся о наших моделях, предоставляя им надёжную защиту и полную конфиденциальность. Нашей задачей является помочь девушкам легко и безопасно заработать много денег.</p>
-        </div>
-        <div class="row">
-            <div class="col d-block d-sm-none mb-5" style="font-size: 1.14rem;font-weight: bold">РАБОТА В PREMIUM ESCORT ЭТО:</div>
-            <div class="col-xl-4 col-sm-12">
-                <div class="about-us-box box_right">
-                    <img src="img/icon/clients.svg" alt="">
-                    <span>СОСТОЯТЕЛЬНЫЕ КЛИЕНТЫ</span>
-                    <div class="about-us-hr left"></div>
-                    <p>У нас очень большая база состоятельных клиентов, которые достойны твоего внимания и являются настоящими джентельмаенами.</p>
-                </div>
-                <div class="about-us-box box_right">
-                    <img src="img/icon/money.svg" alt="">
-                    <span>ЗАРАБОТНАЯ ПЛАТА ОТ 5 000$</span>
-                    <div class="about-us-hr left"></div>
-                    <p>Работая в нашем агентстве ты сможешь обеспечить свою жизнь, все зависит только от твоего  желания, стремления и уверенности в себе.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 d-none d-xl-block col-sm-none text-center">
-                <div class="about-us-middle">
-                   <span>PREMIUM ESCORT</span>
-                    <p>Эскорт агентство</p>
-                    <!-- <img src="./img/pe-logo2.png" alt="">-->
-                </div>
-            </div>
-            <div class="col-xl-4 col-sm-12">
-                <div class="about-us-box">
-                    <img src="img/icon/woman.svg" alt="">
-                    <span>КАЧЕСТВЕННАЯ БЕЗОПАСНОСТЬ</span>
-                    <div class="about-us-hr"></div>
-                    <p>Мы заботимся о безопасности наших девушек, а значит, можно быть спокойной и уверенной в том, что твоя личность будет в полной безопасности.</p>
-                </div>
-                <div class="about-us-box">
-                    <img src="img/icon/experience.svg" alt="">
-                    <span>13 ЛЕТ ОПЫТА В СФЕРЕ ЭСКОРТА</span>
-                    <div class="about-us-hr"></div>
-                    <p>Наше агентство  является лидером данной сфере. Наши  специалисты - профессионалы, именно они будут быстро и качественно делать твою жизнь.</p>
-                </div>
+    <section id="home" class="banner_part about">
+        <div class="container align-items-center">
+            <div class="head-text-about">
+                <span>Кто мы?</span>
+                <p>Мы - компания, оказывающая качественные услуги по предоставлению эскорт - услуг, а также подбору и предоставлению персонала в любых направлениях эскортного и модельного бизнеса, который станет для вас надежным партнером, а сотрудничество
+                    с которым будет выгодным.</p><br>
+                <a class="boot btn hh" href="#about">Подробнее</a>
+                <a style="margin-left: 20px" class="boot btn d-none d-sm-inline-flex" href="advantages.html">Почему мы?</a>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-xl-7">
-                <div class="section-subtittle pt-4 text-center">
-                    Путешествие в роскошную жизнь начинается с первого шага - заполнения анкеты. После рассмотрения с тобой свяжется наш кастинг-менеджер.
-                    <div class="mt-3 d-flex justify-content-center">
-                        <a class="boot btn-pos mr-lg-1 d-none d-sm-block" href="requirements.html">Наши требования</a>
-                        <a class="boot btn-pos ml-lg-1" href="index.html#anketa">Заполнить анкету</a>
+        <div class="head-mouse">
+            <div class="mousey" onClick="document.location='#about'">
+                <div class="scroller"></div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+    <!-- about us part start-->
+    <section id="about" class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 section_tittle text-center">О нашем агентстве</div>
+            </div>
+            <div class="about-us-desc d-none d-sm-block justify-content-center">
+                В современном мире работа в эскорте одна из самых высокооплачиваемых и престижных, ведь таких девушек часто приравнивают к профессиональным моделям. Если девушка смогла побороть в себе чувство неловкости и обратилась в эскорт агентство, то, значит, то
+                она считает себя более или менее привлекательной, а это, уже хорошо. Наше эскорт агентство является одним из ведущих в Украине и имеет заслуженную популярность среди почитателей элитного эскорта. Многолетний опыт в сфере оказания эскорт
+                услуг не заставит вас сомневаться в нашем профиссионализме. Все модели Premium Escort работают с большим удовольствием, так как мы имеем широкую базу состоятельных клиентов и даем возможность зарабатывать немалые деньги. Также, стоит отметить,
+                что мы беспокоимся о наших моделях, предоставляя им надёжную защиту и полную конфиденциальность. Нашей задачей является помочь девушкам легко и безопасно заработать много денег.
+            </div>
+            <div class="about-us-desc d-block d-sm-none justify-content-center">
+                <p> В современном мире работа в эскорте одна из самых высокооплачиваемых и престижных, ведь таких девушек часто приравнивают к профессиональным моделям. Если девушка смогла побороть в себе чувство неловкости и обратилась в эскорт агентство,
+                    то, значит, то она считает себя более или менее привлекательной, а это, уже хорошо.</p><br>
+                <p>Наше эскорт агентство является одним из ведущих в Украине и имеет заслуженную популярность среди почитателей элитного эскорта. Многолетний опыт в сфере оказания эскорт услуг не заставит вас сомневаться в нашем профиссионализме. Все модели
+                    Premium Escort работают с большим удовольствием, так как мы имеем широкую базу состоятельных клиентов и даем возможность зарабатывать немалые деньги.</p><br>
+                <p>Также, стоит отметить, что мы беспокоимся о наших моделях, предоставляя им надёжную защиту и полную конфиденциальность. Нашей задачей является помочь девушкам легко и безопасно заработать много денег.</p>
+            </div>
+            <div class="row">
+                <div class="col d-block d-sm-none mb-5" style="font-size: 1.14rem;font-weight: bold">РАБОТА В PREMIUM ESCORT ЭТО:</div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="about-us-box box_right">
+                        <img src="img/icon/clients.svg" alt="">
+                        <span>СОСТОЯТЕЛЬНЫЕ КЛИЕНТЫ</span>
+                        <div class="about-us-hr left"></div>
+                        <p>У нас очень большая база состоятельных клиентов, которые достойны твоего внимания и являются настоящими джентельмаенами.</p>
+                    </div>
+                    <div class="about-us-box box_right">
+                        <img src="img/icon/money.svg" alt="">
+                        <span>ЗАРАБОТНАЯ ПЛАТА ОТ 5 000$</span>
+                        <div class="about-us-hr left"></div>
+                        <p>Работая в нашем агентстве ты сможешь обеспечить свою жизнь, все зависит только от твоего желания, стремления и уверенности в себе.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 d-none d-xl-block col-sm-none text-center">
+                    <div class="about-us-middle">
+                        <span>PREMIUM ESCORT</span>
+                        <p>Эскорт агентство</p>
+                        <!-- <img src="./img/pe-logo2.png" alt="">-->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-12">
+                    <div class="about-us-box">
+                        <img src="img/icon/woman.svg" alt="">
+                        <span>КАЧЕСТВЕННАЯ БЕЗОПАСНОСТЬ</span>
+                        <div class="about-us-hr"></div>
+                        <p>Мы заботимся о безопасности наших девушек, а значит, можно быть спокойной и уверенной в том, что твоя личность будет в полной безопасности.</p>
+                    </div>
+                    <div class="about-us-box">
+                        <img src="img/icon/experience.svg" alt="">
+                        <span>13 ЛЕТ ОПЫТА В СФЕРЕ ЭСКОРТА</span>
+                        <div class="about-us-hr"></div>
+                        <p>Наше агентство является лидером данной сфере. Наши специалисты - профессионалы, именно они будут быстро и качественно делать твою жизнь.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-7">
+                    <div class="section-subtittle pt-4 text-center">
+                        Путешествие в роскошную жизнь начинается с первого шага - заполнения анкеты. После рассмотрения с тобой свяжется наш кастинг-менеджер.
+                        <div class="mt-3 d-flex justify-content-center">
+                            <a class="boot btn-pos mr-lg-1 d-none d-sm-block" href="requirements.html">Наши требования</a>
+                            <a class="boot btn-pos ml-lg-1" href="index.html#anketa">Заполнить анкету</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- about us part end-->
+    <div class="separator-main">
+        <div class="s-opacity separator-left"></div>
+        <div class="separator-line"></div>
+        <div class="s-opacity separator-right"></div>
     </div>
-</section>
-<!-- about us part end-->
-<div class="separator-main">
-    <div class="s-opacity separator-left"></div>
-    <div class="separator-line"></div>
-    <div class="s-opacity separator-right"></div>
-</div>
-<hr>
-<!--Contacts start -->
-<section class="feature_part">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section_tittle text-center">
-                    Контакты
-                    <p style="color:#ececec;" class="text-center pb-4">Мы работаем без выходных с 9:00 до 19:00</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-10 contact-number about-line justify-content-center text-center">
-                <a href="tel:+380777777777">+38 (067) 123 45 67</a><br>
-                <div class="contact-icons-pos">
-                <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
-                <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
-                <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-10 contact-number about-line justify-content-center text-center">
-                <a href="tel:+380777777777">+38 (067) 987 65 43</a><br>
-                <div class="contact-icons-pos">
-                    <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
-                    <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
-                    <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-10 contact-number justify-content-center text-center">
-                <a href="tel:+380777777777">+38 (067) 987 65 43</a><br>
-                <div class="contact-icons-pos">
-                    <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
-                    <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
-                    <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center contact-tittle mt-5">Напиши нам</div>
-        <div class="row justify-content-center text-center">
-            <form id="fcontact" class="col-md-8 col-sm-12 anketa" action='php/form-contact.php'>
-                <div class="row">
-                    <div class="col">
-                        <input name="name" placeholder="Имя" type="text" required>
-                    </div>
-                    <div class="col">
-                        <input  name="email" placeholder="Email" type="email" required>
+    <hr>
+    <!--Contacts start -->
+    <section class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_tittle text-center">
+                        Контакты
+                        <p style="color:#ececec;" class="text-center pb-4">Мы работаем без выходных с 9:00 до 19:00</p>
                     </div>
                 </div>
-                <input name="comm" placeholder="Сообщение..." type="text" required>
-                <div style="color: white;" class="boot-center pt-3" id="messegeResult"><button class="boot" type="submit" onclick="ajaxFormRequest('messegeResult', 'fcontact', 'php/form-contact.php')">Отправить</button></div>
-            </form>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-10 contact-number about-line justify-content-center text-center">
+                    <a href="tel:+380777777777">+38 (067) 123 45 67</a><br>
+                    <div class="contact-icons-pos">
+                        <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
+                        <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
+                        <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-10 contact-number about-line justify-content-center text-center">
+                    <a href="tel:+380777777777">+38 (067) 987 65 43</a><br>
+                    <div class="contact-icons-pos">
+                        <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
+                        <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
+                        <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-10 contact-number justify-content-center text-center">
+                    <a href="tel:+380777777777">+38 (067) 987 65 43</a><br>
+                    <div class="contact-icons-pos">
+                        <a target="_blank" href="tg://resolve?domain=iam_ignat"><i class="fab fa-2x fa-telegram"></i></a>
+                        <a target="_blank" href="viber://chat?number=12345678"><i class="fab fa-2x fa-viber"></i></a>
+                        <a target="_blank" href="https://wa.me/15551234567"><i class="fab fa-2x fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center contact-tittle mt-5">Напиши нам</div>
+            <div class="row justify-content-center text-center">
+                <form id="fcontact" class="col-md-8 col-sm-12 anketa" action='php/form-contact.php'>
+                    <div class="row">
+                        <div class="col">
+                            <input name="name" placeholder="Имя" type="text" required>
+                        </div>
+                        <div class="col">
+                            <input name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <input name="comm" placeholder="Сообщение..." type="text" required>
+                    <div style="color: white;" class="boot-center pt-3" id="messegeResult"><button class="boot" type="submit" onclick="ajaxFormRequest('messegeResult', 'fcontact', 'php/form-contact.php')">Отправить</button></div>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
-<!-- Contacts end -->
-<!-- footer part start-->
-<footer class="footer py-4">
-    <div class="container-fluid">
-        <div class="col flex-column text-center pt-md-5">
-            <span>Premium Escort</span>
+    </section>
+    <!-- Contacts end -->
+    <!-- footer part start-->
+    <footer class="footer py-4">
+        <div class="container-fluid">
+            <div class="col flex-column text-center pt-md-5">
+                <span>Premium Escort</span>
                 <ul class="social_link d-flex justify-content-center">
                     <li><a href="#"><i class="fab fa-2x fa-vk"></i></a></li>
                     <li><a href="#"><i class="fab fa-2x fa-instagram"></i></a></li>
@@ -259,164 +270,191 @@
                     <li><a href="#"><i class="fab fa-2x fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fab fa-2x fa-pinterest"></i></a></li>
                 </ul>
-            <p>Мы не несём ответственность за рекламодателей, моделей и их материалы. На сайте представлены картинки типажей внешности. От 18 лет. Все знакомства / встречи проходят строго обоюдно.</p>
-            <a class="pol" href="privacy-policy.html">Политика конфиденциальности</a>
-        </div>
-    </div>
-</footer>
-<!-- Right soc bar -->
-<div class="social-icons" id="s-icons">
-    <ul class="navbar-nav" aria-labelledby="btn-share">
-        <li><a target="_blank" href="viber://chat?number=12345678" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/viber.svg"></a></li>
-        <li><a target="_blank" href="tg://resolve?domain=iam_ignat" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telega.svg"></a></li>
-        <li><a target="_blank" href="https://wa.me/15551234567" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/whatsapp.svg"></a></li>
-        <li><a href="#ModalCallback" data-toggle="modal" class="d-none d-sm-block btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telephone.svg"></a>
-            <a href="tel:+1234567890" class="d-block d-sm-none btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telephone.svg"></a></li>
-    </ul>
-    <button id="btn-share" class="btn btn-primary btn-social"><i class="btn-social-main fa fa-comments"></i></button>
-</div>
-<!-- Back to top button -->
-<button id="back-to-top" class="btn btn-primary back-to-top" role="button" title="Наверх" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up"></i></button>
-<!-- The Modal "Контакты" -->
-<div class="modal fade" id="ModalPhones">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <div class="modal-title">Наши контакты</div>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col mdl_block">
-                        <a href="tel:+380777777777">+38 (077) 777 77 77</a>
-                    </div>
-                    <div class="col">
-                        <div class="row mdl_block">
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_viber.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mdl_block">
-                        <a href="tel:+380777777777">+38 (077) 777 77 77</a>
-                    </div>
-                    <div class="col">
-                        <div class="row mdl_block">
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_viber.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mdl_block">
-                        <a href="tel:+380777777777">+38 (077) 777 77 77</a>
-                    </div>
-                    <div class="col">
-                        <div class="row mdl_block">
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_viber.svg"></a></div>
-                            <div class="col"><a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a></div>
-                        </div>
-                    </div>
-                </div>
+                <p>Мы не несём ответственность за рекламодателей, моделей и их материалы. На сайте представлены картинки типажей внешности. От 18 лет. Все знакомства / встречи проходят строго обоюдно.</p>
+                <a class="pol" href="privacy-policy.html">Политика конфиденциальности</a>
             </div>
         </div>
+    </footer>
+    <!-- Right soc bar -->
+    <div class="social-icons" id="s-icons">
+        <ul class="navbar-nav" aria-labelledby="btn-share">
+            <li>
+                <a target="_blank" href="viber://chat?number=12345678" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/viber.svg"></a>
+            </li>
+            <li>
+                <a target="_blank" href="tg://resolve?domain=iam_ignat" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telega.svg"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/15551234567" class="btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/whatsapp.svg"></a>
+            </li>
+            <li>
+                <a href="#ModalCallback" data-toggle="modal" class="d-none d-sm-block btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telephone.svg"></a>
+                <a href="tel:+1234567890" class="d-block d-sm-none btn btn-primary btn-social"><img alt="" class="btn-social-pos" src="img/icon/telephone.svg"></a>
+            </li>
+        </ul>
+        <button id="btn-share" class="btn btn-primary btn-social"><i class="btn-social-main fa fa-comments"></i></button>
     </div>
-</div>
-<!-- The Modal "Перезвонить мне" -->
-<div class="modal fade" id="ModalCallback">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <div class="modal-title">Заказать звонок</div>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form id="fcallback" class="contact-form" action="php/form-callback.php">
+    <!-- Back to top button -->
+    <button id="back-to-top" class="btn btn-primary back-to-top" role="button" title="Наверх" data-toggle="tooltip" data-placement="left"><i class="fa fa-chevron-up"></i></button>
+    <!-- The Modal "Контакты" -->
+    <div class="modal fade" id="ModalPhones">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title">Наши контакты</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
                     <div class="row">
-                        <div class="col form-field col x-50">
-                            <input name="name" placeholder="Имя" type="text" required>
+                        <div class="col mdl_block">
+                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
                         </div>
-                        <div class="col form-field col x-50">
-                            <input name="phone" placeholder="Телефон" type="tel" required>
+                        <div class="col">
+                            <div class="row mdl_block">
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-field col x-100 align-center">
-                        <div id="callbackResult"><button class="boot" type="button" onclick="ajaxFormRequest('callbackResult', 'fcallback', 'php/form-callback.php')">Отправить</button></div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal "Заполнить анкету" -->
-<div class="modal fade" id="ModalAnketa">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <div class="modal-title">Анкета</div>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body text-center">
-                <form id="fprofile-modal" action="php/form-profile.php" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="col">
-                        <input name="name" placeholder="Имя" type="text" required>
-                        <input name="phone" placeholder="Телефон" type="password" required>
-                        <input name="city" placeholder="Город проживания" type="text" required>
-                    </div>
-                    <div class="col">
-                        <input name="age" placeholder="Возраст (18+)" type="text" required>
-                        <input name="insta" placeholder="Instagram (необязательно)" type="text">
-                        <label>Есть ли опыт?</label><br>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="exp" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline1">Да</label>
+                    <div class="row">
+                        <div class="col mdl_block">
+                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
                         </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="exp" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">Нет</label>
+                        <div class="col">
+                            <div class="row mdl_block">
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mdl_block">
+                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
+                        </div>
+                        <div class="col">
+                            <div class="row mdl_block">
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <div class="modal-h text-center">Добавь пару своих фото</div><br>
-                <div class="row justify-content-center">
-                    <div class="col-5">
-                        Фото в полный рост
-                        <input id="filemodal1" type="file" name="file[]" class="inputfile" />
-                        <label for="filemodal1"><img alt="" src="./img/icon/file-bg.svg"></label>
-                    </div>
-                    <div class="col-5">
-                        Фото с других ракурсов
-                        <input id="filemodal2" type="file" name="file[]" class="inputfile" />
-                        <label for="filemodal2"><img alt="" src="./img/icon/file-bg.svg"></label>
-                    </div>
-                </div>
-                <br>
-                <div id="profileModalResult"><button class="boot" type="button" onclick="ajaxFormRequest('profileModalResult', 'fprofile-modal', 'php/form-profile.php')">Отправить</button></div>
-                </form>
             </div>
         </div>
     </div>
-</div>
-<!--
+    <!-- The Modal "Перезвонить мне" -->
+    <div class="modal fade" id="ModalCallback">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title">Заказать звонок</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="fcallback" class="contact-form" action="php/form-callback.php">
+                        <div class="row">
+                            <div class="col form-field col x-50">
+                                <input name="name" placeholder="Имя" type="text" required>
+                            </div>
+                            <div class="col form-field col x-50">
+                                <input name="phone" placeholder="Телефон" type="tel" required>
+                            </div>
+                        </div>
+                        <div class="form-field col x-100 align-center">
+                            <div id="callbackResult"><button class="boot" type="button" onclick="ajaxFormRequest('callbackResult', 'fcallback', 'php/form-callback.php')">Отправить</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Заполнить анкету" -->
+    <div class="modal fade" id="ModalAnketa">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title">Анкета</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                    <form id="fprofile-modal" action="php/form-profile.php" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col">
+                                <input name="name" placeholder="Имя" type="text" required>
+                                <input name="phone" placeholder="Телефон" type="password" required>
+                                <input name="city" placeholder="Город проживания" type="text" required>
+                            </div>
+                            <div class="col">
+                                <input name="age" placeholder="Возраст (18+)" type="text" required>
+                                <input name="insta" placeholder="Instagram (необязательно)" type="text">
+                                <label>Есть ли опыт?</label><br>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="exp" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Да</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="exp" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Нет</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-h text-center">Добавь пару своих фото</div><br>
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                Фото в полный рост
+                                <input id="filemodal1" type="file" name="file[]" class="inputfile" />
+                                <label for="filemodal1"><img alt="" src="./img/icon/file-bg.svg"></label>
+                            </div>
+                            <div class="col-5">
+                                Фото с других ракурсов
+                                <input id="filemodal2" type="file" name="file[]" class="inputfile" />
+                                <label for="filemodal2"><img alt="" src="./img/icon/file-bg.svg"></label>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="profileModalResult"><button class="boot" type="button" onclick="ajaxFormRequest('profileModalResult', 'fprofile-modal', 'php/form-profile.php')">Отправить</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 </body>
+
 </html>
 <!-- owl carousel js
 <script src="js/owl.carousel.min.js"></script>
