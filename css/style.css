@@ -25,6 +25,7 @@
             padding: 0;
             margin: 0;
             font-size: 14px;
+            overflow-x: hidden;
         }
         /*********** TYPOGRAPHY STYLES ***********/
         
@@ -3000,13 +3001,20 @@
                 padding: 10px;
             }
             .main_menu .navbar-brand {
-                margin-left: -250px;
+                /* margin-left: -250px; */
+                position: absolute;
+                left: 4%;
             }
             .menu_right_block {
-                margin-right: -270px;
+                /* margin-right: -270px; */
+                position: absolute;
+                right: 4%;
             }
-            /*    .nav-item {padding: 5px 10px;}
-        .home_menu {background: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 70%, rgba(0, 0, 0, 0.01) 100%);} */
+            .nav-item {
+                height: 54px;
+                display: flex;
+                align-items: center;
+            }
             footer {
                 margin-top: 100px;
             }
