@@ -715,10 +715,9 @@
         .scroll .hidden {
             display: none;
         }
-        
-        .scroll .menu {
+        /* .scroll .menu {
             margin-left: -110px;
-        }
+        } */
         /* BLOCKS STYLE */
         
         .feature_part {
@@ -3020,6 +3019,12 @@
             }
             .comment_frame {
                 margin-top: -22px;
+            }
+        }
+        
+        @media (max-width: 1480px) {
+            .hidden {
+                display: none;
             }
         }
         
