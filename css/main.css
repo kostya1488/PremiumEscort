@@ -447,7 +447,7 @@ body::-webkit-scrollbar-button {
 .main_menu .navbar-brand-mob {
     font-family: Geometos;
     font-size: 1.32rem;
-    padding: .8rem 0rem .7rem 0rem!important;
+    padding: .8rem 0rem .7rem .9rem!important;
     /*    margin-top: 0.27rem; */
 }
 .main_menu .navbar-brand span {
@@ -476,7 +476,7 @@ body::-webkit-scrollbar-button {
     z-index: 1;
 }
 .menu-icon {
-    padding: unset;
+    padding: 15px;
 }
 .main_menu .navbar-toggler:after {
     position: absolute;
@@ -1494,7 +1494,6 @@ input:focus {
     font-weight: bold;
     line-height: 12px;
     margin-top: 38%;
-    margin-left: -5%;
     padding: 4px 0px 34px 20px;
     border-left: 4px solid #d0bc89;
 }

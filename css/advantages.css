@@ -331,7 +331,7 @@ input:focus {
 }
 
 .btn-pos {
-    margin: 10px;
+    margin: 10px 4px;
     border-bottom-style: solid!important;
 }
 
@@ -489,7 +489,7 @@ input:focus {
 .main_menu .navbar-brand-mob {
     font-family: Geometos;
     font-size: 1.32rem;
-    padding: .8rem 0rem .5rem 0rem!important;
+    padding: .8rem 0rem .5rem .9rem!important;
     /*    margin-top: 0.27rem; */
 }
 
@@ -525,7 +525,7 @@ input:focus {
 }
 
 .menu-icon {
-    padding: unset;
+    padding: 15px;
 }
 
 .main_menu .navbar-toggler:after {
@@ -706,6 +706,7 @@ input:focus {
     background-image: linear-gradient(to top, black 0%, transparent 70%), url(../img/head_why.jpg)!important;
     background-size: 100% auto;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .head-text-ads {
@@ -730,10 +731,6 @@ input:focus {
     color: #fff!important;
     font-weight: 400;
     line-height: normal;
-}
-
-.head-text-ads .boot {
-    padding: 10px 40px;
 }
 
 .container-fluid,
@@ -1110,6 +1107,9 @@ footer {
      ::placeholder {
         font-size: .9rem
     }
+    .head-text-ads .boot {
+        padding: 10px 15px;
+    }
 }
 
 
@@ -1319,9 +1319,6 @@ footer {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .main_menu .navbar {
-        padding: 15px 0;
-    }
     .main_menu .navbar-brand {
         max-width: 130px;
     }
@@ -1330,6 +1327,9 @@ footer {
     }
     .section_tittle p {
         margin-bottom: 10px;
+    }
+    .menu-icon {
+        padding: 15px;
     }
 }
 
@@ -1379,6 +1379,9 @@ footer {
     }
     footer {
         margin-top: 100px;
+    }
+    .head-text-ads .boot {
+        padding: 10px 40px;
     }
 }
 
@@ -1516,9 +1519,9 @@ footer {
         padding: 10px 30px;
         font-size: 16px;
     }
-    .btn-pos {
+    /* .btn-pos {
         margin-top: 10px
-    }
+    } */
 }
 
 @media (max-width: 768px) {

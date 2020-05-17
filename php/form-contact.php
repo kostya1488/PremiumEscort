@@ -1,7 +1,7 @@
 <?php
 if($_POST)
     {
-    $to = "petest@ro.ru";
+    $to = "matvienkoigor956@gmail.com";
     $subject = "Письмо с Premium Escort";
     $message = '<span style="font-weight:bold;color:#007610;">Письмо было отправлено через контактную форму</span><br>
     Имя: <span style="font-weight:bold;color:#B38600;">'.$_POST['name'].'</span><br>

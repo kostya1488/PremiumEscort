@@ -30,7 +30,7 @@ if ( isset( $_POST['sendMail'] ) ) {
 	$city = substr( $_POST['city'], 0, 64 );
 	$tel = substr( $_POST['tel'], 0, 64 );
     $insta = substr( $_POST['insta'], 0, 64 );
-	$exp = substr( $_POST['exp'], 0, 64 );
+	$exp = substr( $_POST['exp'], 0, 64 );	
 
 if($_FILES)
 {
@@ -54,6 +54,20 @@ if($_FILES)
     $body .= "Инстаграм: ".$insta."\r\n";
     $body .= "Опыт в данной сфере: ".$exp;
 	send_mail($to, $body, $email, $filename);
+}
+
+
+
+if ( isset( $_POST['sendMessage'] ) ) {
+	$name = substr( $_POST['name'], 0, 64 );
+	$email = substr( $_POST['email'], 0, 64 );
+	$mess = substr( $_POST['message'], 0, 128 );	
+
+
+	$body = "Имя: ".$name."\r\n";
+    $body .= "Возраст: ".$email."\r\n";
+    $body .= "Город проживания: ".$mess
+	send_mail($to, $body, $email);
 }
 
 

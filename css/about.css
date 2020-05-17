@@ -130,7 +130,7 @@ button:focus,
 }
 
 .btn-pos {
-    margin: 10px;
+    margin: 10px 4px;
     border-bottom-style: solid!important;
 }
 
@@ -240,7 +240,7 @@ body::-webkit-scrollbar-button {
 .main_menu .navbar-brand-mob {
     font-family: Geometos;
     font-size: 1.32rem;
-    padding: .8rem 0rem .5rem 0rem!important;
+    padding: .8rem 0rem .7rem .9rem!important;
     /*    margin-top: 0.27rem; */
 }
 
@@ -276,7 +276,7 @@ body::-webkit-scrollbar-button {
 }
 
 .menu-icon {
-    padding: unset;
+    padding: 15px;
 }
 
 .main_menu .navbar-toggler:after {
@@ -1111,6 +1111,9 @@ footer {
      ::placeholder {
         font-size: .9rem
     }
+    .head-text-about .boot {
+        padding: 10px!important;
+    }
 }
 
 
@@ -1364,7 +1367,8 @@ footer {
         line-height: 2px;
     }
     .head-text-about .boot {
-        font-size: 0.84rem
+        font-size: 0.84rem;
+        padding: 10px 30px;
     }
     .head-text-about {
         top: unset!important;
@@ -1410,9 +1414,6 @@ footer {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .main_menu .navbar {
-        padding: 15px 0;
-    }
     .main_menu .navbar-brand {
         max-width: 130px;
     }
@@ -1421,6 +1422,9 @@ footer {
     }
     .section_tittle p {
         margin-bottom: 10px;
+    }
+    .menu-icon {
+        padding: 15px;
     }
 }
 

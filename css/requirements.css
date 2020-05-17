@@ -119,6 +119,7 @@ button:focus,
 .text-center span {
     font-size: 1rem;
     color: #d3d3d3;
+    white-space: nowrap;
 }
 
 
@@ -518,7 +519,7 @@ input:focus {
 .main_menu .navbar-brand-mob {
     font-family: Geometos;
     font-size: 1.32rem;
-    padding: .8rem 0rem .5rem 0rem!important;
+    padding: .8rem 0rem .5rem .9rem!important;
     /*    margin-top: 0.27rem; */
 }
 
@@ -554,7 +555,7 @@ input:focus {
 }
 
 .menu-icon {
-    padding: unset;
+    padding: 15px;
 }
 
 .main_menu .navbar-toggler:after {
@@ -726,7 +727,7 @@ input:focus {
 
 .head-text-req {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 7.5%;
     max-width: 450px;
     padding: 4px 0px 22px 20px;
@@ -1269,9 +1270,6 @@ footer {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .main_menu .navbar {
-        padding: 15px 0;
-    }
     .main_menu .navbar-brand {
         max-width: 130px;
     }
@@ -1280,6 +1278,9 @@ footer {
     }
     .section_tittle p {
         margin-bottom: 10px;
+    }
+    .menu-icon {
+        padding: 15px;
     }
 }
 

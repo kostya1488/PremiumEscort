@@ -507,7 +507,7 @@
         .main_menu .navbar-brand-mob {
             font-family: Geometos;
             font-size: 1.32rem;
-            padding: .8rem 0rem .7rem 0rem!important;
+            padding: .8rem 0rem .7rem .9rem!important;
             /*    margin-top: 0.27rem; */
         }
         
@@ -543,7 +543,7 @@
         }
         
         .menu-icon {
-            padding: unset;
+            padding: 15px;
         }
         
         .main_menu .navbar-toggler:after {
@@ -1607,7 +1607,7 @@
         }
         
         .aboutSectionButton a {
-            margin: 0 10px;
+            margin: 0 4px;
         }
         
         .mb_110 {
@@ -1656,7 +1656,7 @@
         }
         
         .btn-pos {
-            margin: 10px;
+            margin: 10px 4px;
             border-bottom-style: solid!important;
         }
         
@@ -1727,7 +1727,7 @@
             font-weight: bold;
             line-height: 12px;
             margin-top: 38%;
-            margin-left: -5%;
+            /* margin-left: -5%; */
             padding: 4px 0px 34px 20px;
             border-left: 4px solid #d0bc89;
         }
@@ -2948,9 +2948,9 @@
         }
         
         @media only screen and (min-width: 576px) and (max-width: 767px) {
-            .main_menu .navbar {
+            /* .main_menu .navbar {
                 padding: 15px 0;
-            }
+            } */
             .main_menu .navbar-brand {
                 max-width: 130px;
             }
@@ -2989,6 +2989,9 @@
             }
             .mb_130 {
                 margin-bottom: 70px;
+            }
+            .menu-icon {
+                padding: 15px;
             }
         }
         
@@ -3040,7 +3043,7 @@
                 margin-left: 15%;
             }
             .main-head-text p {
-                color: #000;
+                color: #fff;
             }
             .head-text-botton {
                 margin-top: 36%;

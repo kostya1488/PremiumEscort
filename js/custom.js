@@ -113,26 +113,26 @@ $(window).scroll(function() {
 
 // Send data from forms and callback
 
-// function ajaxFormRequest(result_id,form_id,url) {
-//     jQuery.ajax({
-//         url: url,
-//         type: "POST",
-//         dataType: "html",
-//         data: jQuery("#"+form_id).serialize(),
-//         success: function(response) {
-//             document.getElementById(result_id).innerHTML = response;
-//         },
-//         error: function(response) {
-//             document.getElementById(result_id).innerHTML = "<b>При отправке данных возникла ошибка</b>";
-//         }
-//     });
+function ajaxFormRequest(result_id, form_id, url) {
+    jQuery.ajax({
+        url: url,
+        type: "POST",
+        dataType: "html",
+        data: jQuery("#" + form_id).serialize(),
+        success: function(response) {
+            document.getElementById(result_id).innerHTML = response;
+        },
+        error: function(response) {
+            document.getElementById(result_id).innerHTML = "<b>При отправке данных возникла ошибка</b>";
+        }
+    });
 
-//     $(':input','#'+form_id)
-//         .not(':button, :submit, :reset, :hidden')
-//         .val('')
-//         .removeAttr('checked')
-//         .removeAttr('selected');
-// }
+    $(':input', '#' + form_id)
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .removeAttr('checked')
+        .removeAttr('selected');
+}
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -148,7 +148,6 @@ window.onload = function() {
 
 jQuery(document).ready(function() {
     // =validation
-    var errorTxt = 'Ошибка отправки';
     jQuery("#fprofile").validate({
         submitHandler: function(form) {
             var form = document.forms.fprofile,
@@ -169,7 +168,29 @@ jQuery(document).ready(function() {
             xhr.send(formData);
         }
     });
+
+    jQuery("#formSendMessage").validate({
+        submitHandler: function(form) {
+            var form = document.forms.fprofile,
+                formData = new FormData(form),
+                xhr = new XMLHttpRequest();
+
+            xhr.open("POST", "php/form-profile.php");
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        // $(location).attr('href', url);
+                        return false
+                    }
+                }
+            };
+            xhr.send(formData);
+        }
+    });
+
 })
+
 
 function sendSuccess(callback) {
     jQuery(callback).find("form fieldset").html(thank);
