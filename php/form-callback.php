@@ -1,17 +1,12 @@
 <?php
-if($_POST)
-    {
-    $to = "matvienkoigor956@gmail.com";
-    $subject = "Письмо с Premium Escort";
-    $message = '<span style="font-weight:bold;color:#007610;">Новая заявка "Перезвонить мне"</span><br>
-    Имя: <span style="font-weight:bold;color:#B38600;">'.$_POST['name'].'</span><br>
-    Телефон: <span style="font-weight:bold;color:#B38600;">'.$_POST['phone'].'</span>';
-    $headers = "Content-type: text/html; charset=UTF-8 \r\n";
-    $headers .= "From: <agent@premuim-escort.com>\r\n";
-    $result = mail($to, $subject, $message, $headers);
+$recepient = "matvienkoigor956@gmail.com";
+$sitename = "Premium Escort";
 
-    if ($result){
-        echo "<center>Спасибо, мы скоро перезвоним!</center>";
-    }
-    }
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
+$text = trim($_POST["comm"]);
+$message = "Имя: $name \nEmail: $email \nТекст: $text";
+
+$pagetitle = "Новая заявка с сайта: \"$sitename\"";
+mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 ?>

@@ -96,58 +96,34 @@ $(window).scroll(function() {
 });
 
 // Send data from forms and callback
+$(document).ready(function() {
 
-// function checkParams() {
-//     var myname = $('#myname').val();
-//     var myage = $('#myage').val();
-//     var myphone = $('#myphone').val();
-//     var mycity = $('#mycity').val();
+    $("#fcontact").submit(function() {
+        $.ajax({
+            type: "POST",
+            url: "php/form-callback.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            $("#form").trigger("reset");
+        });
+        return false;
+    });
 
-//     if (myname.length != 0 && myage.length != 0 && myphone.length != 0 && mycity.length != 0) {
-//         $('#btn').removeAttr('disabled');
-//         $('#btn').removeAttr('title');
-//     } else {
-//         $('#btn').attr('disabled', 'disabled');
-//     }
-// }
+});
 
-// Send data from forms and callback
-
-// function ajaxFormRequest(result_id,form_id,url) {
-//     jQuery.ajax({
-//         url: url,
-//         type: "POST",
-//         dataType: "html",
-//         data: jQuery("#"+form_id).serialize(),
-//         success: function(response) {
-//             document.getElementById(result_id).innerHTML = response;
-//         },
-//         error: function(response) {
-//             document.getElementById(result_id).innerHTML = "<b>При отправке данных возникла ошибка</b>";
-//         }
-//     });
-
-//     $(':input','#'+form_id)
-//         .not(':button, :submit, :reset, :hidden')
-//         .val('')
-//         .removeAttr('checked')
-//         .removeAttr('selected');
-// }
-// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 // Как только страничка загрузилась 
-window.onload = function() {
-        // проверяем поддерживает ли браузер FormData 
-        if (!window.FormData) {
-            alert("Браузер не поддерживает загрузку файлов на этом сайте");
-        }
-    }
-    // var url = "http://www.dr05045.ho.ua/escort/indexAfterSend.html";
+// window.onload = function() {
+//         if (!window.FormData) {
+//             alert("Браузер не поддерживает загрузку файлов на этом сайте");
+//         }
+//     }
 
 jQuery(document).ready(function() {
-    // =validation
     var errorTxt = 'Ошибка отправки';
     jQuery("#fprofile").validate({
         submitHandler: function(form) {
@@ -160,7 +136,6 @@ jQuery(document).ready(function() {
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4) {
                     if (xhr.status == 200) {
-                        // $(location).attr('href', url);
                         hideAnketaSection();
                         return false
                     }
