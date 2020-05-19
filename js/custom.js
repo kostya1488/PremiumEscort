@@ -95,23 +95,25 @@ $(window).scroll(function() {
     }
 });
 
+
+
 // Send data from forms and callback
 $(document).ready(function() {
 
     $("#fcontact").submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/form-callback.php",
+            url: "php/form-contact.php",
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-            $("#form").trigger("reset");
+            hideShowSection('fcontact', 'fcontactAfterSend');
+            $("#fcontact").trigger("reset");
         });
         return false;
     });
-
 });
+
 
 
 
@@ -136,7 +138,7 @@ jQuery(document).ready(function() {
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4) {
                     if (xhr.status == 200) {
-                        hideAnketaSection();
+                        hideShowSection('fprofile', 'anketaAfterSend');
                         return false
                     }
                 }
@@ -176,18 +178,16 @@ function readMore(iddots, idmore, idmyBtn) {
 
 // }
 // hide form after send
-function hideform() {
-    document.forms.formAnketa.style.display = "none";
-}
+
 // Спасибо! Анкета успешно отправлена.
 // Если ты нам подходишь, мы обязательно свяжемся с тобой для обсуждения всех деталей.
-function hideAnketaSection() {
-    document.getElementById('fprofile').style.display = 'none';
-    document.getElementById('anketaAfterSend').style.display = 'block';
+function hideShowSection(elemHide, elemshow) {
+    document.getElementById(elemHide).style.display = 'none';
+    document.getElementById(elemshow).style.display = 'block';
 
 }
 
-function showAnketaSection() {
-    document.getElementById('anketaAfterSend').style.display = 'none';
-    document.getElementById('fprofile').style.display = 'block';
-}
+// function showAnketaSection(elemHide, elemshow) {
+//     document.getElementById(elemHide).style.display = 'none';
+//     document.getElementById(elemshow).style.display = 'block';
+// }

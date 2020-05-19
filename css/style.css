@@ -1956,6 +1956,7 @@
             display: none !important;
         }
         
+        #fcontactAfterSend,
         #anketaAfterSend {
             display: none;
             margin: 80px 0;

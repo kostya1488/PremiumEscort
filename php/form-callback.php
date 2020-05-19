@@ -3,10 +3,10 @@ $recepient = "matvienkoigor956@gmail.com";
 $sitename = "Premium Escort";
 
 $name = trim($_POST["name"]);
-$email = trim($_POST["email"]);
-$text = trim($_POST["comm"]);
-$message = "Имя: $name \nEmail: $email \nТекст: $text";
+$phone = trim($_POST["phone"]);
 
-$pagetitle = "Новая заявка с сайта: \"$sitename\"";
+$message = "Меня зовут: $name \nМой номер: $phone";
+
+$pagetitle = "Заказали звонок с сайта: \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 ?>
