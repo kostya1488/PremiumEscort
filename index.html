@@ -474,6 +474,7 @@
                 </div>
             </form>
 
+
             <div class="col d-none d-sm-block mt-4 section-subtittle text-center">
                 <p>* Агентство гарантирует полную конфиденциальность ваших анкет. Мы не занимаемся рассылкой ваших данных, они находятся только у нас. По просьбе девушки мы немедленно удалим фотографии и анкетные данные. Фотографии, которые не прошли кастинг
                     тоже удаляются. В нашем агентстве строгие правила, фотографии и данные девушек - это ваша собственность, поэтому мы обсуждаем с моделью каждый свой шаг!</p>
@@ -859,7 +860,7 @@
 
                     <!-- </div> -->
                 </div>
-                <form id="fcontact" class="col-md-8 col-sm-12 anketa" action='php/form-contact.php'>
+                <form id="fcontact" class="col-md-8 col-sm-12 anketa">
                     <div class="row">
                         <div class="col">
                             <input name="name" placeholder="Имя" type="text" required>
@@ -870,7 +871,7 @@
                     </div>
                     <input name="comm" placeholder="Сообщение..." type="text" required>
                     <div style="color: white;" class="boot-center pt-3">
-                        <button class="boot">Отправить</button>
+                        <button class="boot" onclick="ajaxFormRequest('fcontact', 'php/form-contact.php')">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -996,7 +997,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form id="fcallback" class="contact-form" action="php/form-callback.php">
+                    <form id="fcallback" class="contact-form">
                         <div class="row">
                             <div class="col form-field col x-50">
                                 <input name="name" placeholder="Имя" type="text" required>
@@ -1007,11 +1008,10 @@
                         </div>
                         <div class="form-field col x-100 align-center">
                             <div id="callbackResult">
-                                <button class="boot" type="button" onclick="lol()">Отправить</button>
+                                <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>

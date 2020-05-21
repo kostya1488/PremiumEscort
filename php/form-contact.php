@@ -7,6 +7,7 @@ $email = trim($_POST["email"]);
 $text = trim($_POST["comm"]);
 $message = "Имя: $name \nEmail: $email \nТекст: $text";
 
-$pagetitle = "Новая заявка с сайта: \"$sitename\"";
+$pagetitle = "Сообщение с сайта: \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+
 ?>

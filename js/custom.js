@@ -98,21 +98,54 @@ $(window).scroll(function() {
 
 
 // Send data from forms and callback
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $("#fcontact").submit(function() {
+//     $("#fcontact").submit(function() {
+//         $.ajax({
+//             type: "POST",
+//             url: "php/form-contact.php",
+//             data: $(this).serialize()
+//         }).done(function() {
+//             $(this).find("input").val("");
+//             hideShowSection('fcontact', 'fcontactAfterSend');
+//             $("#fcontact").trigger("reset");
+//         });
+//         return false;
+//     });
+// });
+function ajaxFormRequest(form_id, url) {
+    $("#" + form_id).submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/form-contact.php",
+            url: url,
             data: $(this).serialize()
         }).done(function() {
-            $(this).find("input").val("");
-            hideShowSection('fcontact', 'fcontactAfterSend');
-            $("#fcontact").trigger("reset");
+            // $(this).find("input").val("");
+            // hideShowSection('fcontact', 'fcontactAfterSend');
+            switch (form_id) {
+                case 'fcontact':
+                    hideShowSection('fcontact', 'fcontactAfterSend');
+                    break
+                case 'fcallback':
+                    $('#callbackResult').html('<h6>Обратный звонок заказан!</h6>');
+                    setTimeout(() => {
+                        $('#ModalCallback').removeClass('show');
+                    }, 1000);
+                    // $('#ModalCallback').removeClass('show');
+                    break
+                case 'fprofile':
+                    hideShowSection('fprofile', 'anketaAfterSend');
+                    break
+                default:
+                    alert('def')
+                    break
+
+            }
+            // $(form_id).trigger("reset");
         });
         return false;
-    });
-});
+    })
+}
 
 
 
@@ -126,7 +159,7 @@ $(document).ready(function() {
 //     }
 
 jQuery(document).ready(function() {
-    var errorTxt = 'Ошибка отправки';
+    // var errorTxt = 'Ошибка отправки';
     jQuery("#fprofile").validate({
         submitHandler: function(form) {
             var form = document.forms.fprofile,
@@ -148,11 +181,11 @@ jQuery(document).ready(function() {
     });
 })
 
-function sendSuccess(callback) {
-    jQuery(callback).find("form fieldset").html(thank);
-    startClock();
+// function sendSuccess(callback) {
+//     jQuery(callback).find("form fieldset").html(thank);
+//     startClock();
 
-}
+// }
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
