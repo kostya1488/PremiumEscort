@@ -340,7 +340,7 @@
                     <div class="section-subtittle mt-4 text-center">
                         Остались вопросы, на которые мы не дали ответ?
                         <p class="text-center">Заполни форму обратного вызова, мы перезвоним и ответим на все вопросы, которые тебя интересуют.</p>
-                        <form id="fcallback" class="contact-form anketa" action="php/form-callback.php">
+                        <form id="fcallback2" class="contact-form anketa">
                             <div class="row justify-content-center">
                                 <div class="col-xl-4 form-field col x-50">
                                     <input name="name" placeholder="Имя" type="text" required>
@@ -350,7 +350,9 @@
                                 </div>
                             </div>
                             <div class="form-field col x-100 align-center mt-4">
-                                <div id="callbackResult"><button class="boot" type="button" onclick="ajaxFormRequest('callbackResult', 'fcallback', 'php/form-callback.php')">Отправить</button></div>
+                                <div id="callbackResult2">
+                                    <button class="boot" onclick="ajaxFormRequest('fcallback2', 'php/form-callback.php')">Отправить</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -523,7 +525,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form id="fcallback" class="contact-form" action="php/form-callback.php">
+                    <form id="fcallback" class="contact-form">
                         <div class="row">
                             <div class="col form-field col x-50">
                                 <input name="name" placeholder="Имя" type="text" required>
@@ -533,7 +535,9 @@
                             </div>
                         </div>
                         <div class="form-field col x-100 align-center">
-                            <div id="callbackResult"><button class="boot" type="button" onclick="ajaxFormRequest('callbackResult', 'fcallback', 'php/form-callback.php')">Отправить</button></div>
+                            <div id="callbackResult">
+                                <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
+                            </div>
                         </div>
                     </form>
                 </div>

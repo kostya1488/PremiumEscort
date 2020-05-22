@@ -97,22 +97,8 @@ $(window).scroll(function() {
 
 
 
-// Send data from forms and callback
-// $(document).ready(function() {
+// Send data from forms
 
-//     $("#fcontact").submit(function() {
-//         $.ajax({
-//             type: "POST",
-//             url: "php/form-contact.php",
-//             data: $(this).serialize()
-//         }).done(function() {
-//             $(this).find("input").val("");
-//             hideShowSection('fcontact', 'fcontactAfterSend');
-//             $("#fcontact").trigger("reset");
-//         });
-//         return false;
-//     });
-// });
 function ajaxFormRequest(form_id, url) {
     $("#" + form_id).submit(function() {
         $.ajax({
@@ -120,8 +106,6 @@ function ajaxFormRequest(form_id, url) {
             url: url,
             data: $(this).serialize()
         }).done(function() {
-            // $(this).find("input").val("");
-            // hideShowSection('fcontact', 'fcontactAfterSend');
             switch (form_id) {
                 case 'fcontact':
                     hideShowSection('fcontact', 'fcontactAfterSend');
@@ -130,8 +114,11 @@ function ajaxFormRequest(form_id, url) {
                     $('#callbackResult').html('<h6>Обратный звонок заказан!</h6>');
                     setTimeout(() => {
                         $('#ModalCallback').removeClass('show');
-                    }, 1000);
-                    // $('#ModalCallback').removeClass('show');
+                    }, 2000);
+                    break
+                case 'fcallback2':
+                    $('#callbackResult2').html('<h6>Обратный звонок заказан!</h6>');
+
                     break
                 case 'fprofile':
                     hideShowSection('fprofile', 'anketaAfterSend');
@@ -141,22 +128,10 @@ function ajaxFormRequest(form_id, url) {
                     break
 
             }
-            // $(form_id).trigger("reset");
         });
         return false;
     })
 }
-
-
-
-
-
-// Как только страничка загрузилась 
-// window.onload = function() {
-//         if (!window.FormData) {
-//             alert("Браузер не поддерживает загрузку файлов на этом сайте");
-//         }
-//     }
 
 jQuery(document).ready(function() {
     // var errorTxt = 'Ошибка отправки';
@@ -181,14 +156,6 @@ jQuery(document).ready(function() {
     });
 })
 
-// function sendSuccess(callback) {
-//     jQuery(callback).find("form fieldset").html(thank);
-//     startClock();
-
-// }
-
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 // Read more for reviews
 function readMore(iddots, idmore, idmyBtn) {
     var dots = document.getElementById(iddots);
@@ -205,22 +172,11 @@ function readMore(iddots, idmore, idmyBtn) {
         moreText.style.display = "inline";
     }
 }
+
 //-------------------------------------------------------------------------------------------------------------------
-// function editAnketa() {
-//     $(location).attr('href', 'http://www.dr05045.ho.ua/escort/#anketa');
 
-// }
-// hide form after send
-
-// Спасибо! Анкета успешно отправлена.
-// Если ты нам подходишь, мы обязательно свяжемся с тобой для обсуждения всех деталей.
 function hideShowSection(elemHide, elemshow) {
     document.getElementById(elemHide).style.display = 'none';
     document.getElementById(elemshow).style.display = 'block';
 
 }
-
-// function showAnketaSection(elemHide, elemshow) {
-//     document.getElementById(elemHide).style.display = 'none';
-//     document.getElementById(elemshow).style.display = 'block';
-// }

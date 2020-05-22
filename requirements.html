@@ -549,7 +549,7 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form id="fcallback" class="contact-form" action="php/form-callback.php">
+                    <form id="fcallback" class="contact-form">
                         <div class="row">
                             <div class="col form-field col x-50">
                                 <input name="name" placeholder="Имя" type="text" required>
@@ -559,7 +559,9 @@
                             </div>
                         </div>
                         <div class="form-field col x-100 align-center">
-                            <div id="callbackResult"><button class="boot" type="button" onclick="ajaxFormRequest('callbackResult', 'fcallback', 'php/form-callback.php')">Отправить</button></div>
+                            <div id="callbackResult">
+                                <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
+                            </div>
                         </div>
                     </form>
                 </div>
