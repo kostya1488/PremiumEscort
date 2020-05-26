@@ -333,6 +333,17 @@ input:focus {
     margin: 80px 0;
 }
 
+.sendmess {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 22px;
+}
+
+.sendmess p {
+    color: #fff;
+    font-size: 14px;
+}
+
 .anketa input.error {
     border-bottom: 2px solid rgb(131, 34, 34);
 }
