@@ -110,11 +110,11 @@ function ajaxFormRequest(form_id, url) {
                 case 'fcontact':
                     hideShowSection('fcontact', 'fcontactAfterSend');
                     break
+                case 'fcontact2':
+                    hideShowSection('fcontact2', 'fcontactAfterSend2');
+                    break
                 case 'fcallback':
                     $('#callbackResult').html('<h6>Обратный звонок заказан!</h6>');
-                    setTimeout(() => {
-                        $('#ModalCallback').removeClass('show');
-                    }, 2000);
                     break
                 case 'fcallback2':
                     $('#callbackResult2').html('<h6>Обратный звонок заказан!</h6>');
@@ -124,7 +124,7 @@ function ajaxFormRequest(form_id, url) {
                     hideShowSection('fprofile', 'anketaAfterSend');
                     break
                 default:
-                    alert('def')
+                    alert('ERROR')
                     break
 
             }

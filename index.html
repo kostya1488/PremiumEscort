@@ -923,7 +923,7 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <div class="modal-title">Наши контакты</div>
+                    <div class="modal-title">НАШИ КОНТАКТЫ</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
@@ -983,6 +983,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -992,13 +993,14 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <div class="modal-title">Заказать звонок</div>
+                    <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
                     <form id="fcallback" class="contact-form">
-                        <div class="row">
+                        <div class="fcallInp">
                             <div class="col form-field col x-50">
                                 <input name="name" placeholder="Имя" type="text" required>
                             </div>
@@ -1009,6 +1011,7 @@
                         <div class="form-field col x-100 align-center">
                             <div id="callbackResult">
                                 <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
+                                <p>Мы свяжемся с тобой в ближайшее время.</p>
                             </div>
                         </div>
                     </form>

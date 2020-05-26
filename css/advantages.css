@@ -1032,7 +1032,49 @@ footer {
 .back-to-top:hover {
     background: #d0bc89;
     border-color: #d0bc89;
-    color: #fff;
+    color: #ffffff;
+}
+
+
+/* ------------------------------------ */
+
+.modal-content {
+    border-radius: 0;
+    height: 340px;
+    padding: 25px;
+}
+
+.modal-header {
+    border-bottom: 0!important;
+    display: block;
+}
+
+.modal-header .close {
+    position: relative;
+    padding: 0;
+    top: -40px;
+    right: -10px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+.fcallInp {
+    margin-bottom: 20px;
+}
+
+#fcallback {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#fcallback p {
+    margin-top: 20px;
+    color: #000;
 }
 
 

@@ -360,8 +360,9 @@
                         Спасибо! Анкета успешно отправлена.
                         <p class="text-center">Если ты нам подходишь, мы обязательно свяжемся с тобой для обсуждения всех деталей.</p>
                     </div>
+                    <br>
                     <div style="color: white" class="boot-center">
-                        <input value="Заполнить анкету" type="button" class="boot boot-center" onclick="showAnketaSection()">
+                        <input value="Заполнить анкету" type="button" class="boot boot-center" onclick="hideShowSection('anketaAfterSend','fprofile')">
                     </div>
                 </div>
 
@@ -419,6 +420,7 @@
                     <input id="btn" value="Отправить" name="sendMail" type="submit" class="boot boot-center" title="Заполни все обязательные поля">
                 </div>
             </form>
+
 
             <div class="col d-none d-sm-block mt-4 section-subtittle text-center">
                 <p>* Агентство гарантирует полную конфиденциальность ваших анкет. Мы не занимаемся рассылкой ваших данных, они находятся только у нас. По просьбе девушки мы немедленно удалим фотографии и анкетные данные. Фотографии, которые не прошли кастинг
@@ -544,13 +546,14 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <div class="modal-title">Заказать звонок</div>
+                    <div class="modal-title">ЗАКАЗАТЬ ЗВОНОК</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
                     <form id="fcallback" class="contact-form">
-                        <div class="row">
+                        <div class="fcallInp">
                             <div class="col form-field col x-50">
                                 <input name="name" placeholder="Имя" type="text" required>
                             </div>
@@ -561,6 +564,7 @@
                         <div class="form-field col x-100 align-center">
                             <div id="callbackResult">
                                 <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
+                                <p>Мы свяжемся с тобой в ближайшее время.</p>
                             </div>
                         </div>
                     </form>
