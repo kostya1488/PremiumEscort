@@ -1047,12 +1047,13 @@ footer {
 .modal-header {
     border-bottom: 0!important;
     display: block;
+    padding-top: 0;
 }
 
 .modal-header .close {
     position: relative;
     padding: 0;
-    top: -40px;
+    top: -25px;
     right: -10px;
 }
 
@@ -1060,6 +1061,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 0;
+    justify-content: center;
 }
 
 .fcallInp {
@@ -1075,6 +1077,34 @@ footer {
 #fcallback p {
     margin-top: 20px;
     color: #000;
+}
+
+.modal-body-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-body-contact p {
+    color: black;
+}
+
+.rowContact {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.messengerIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.messIcon img {
+    width: 26px;
 }
 
 

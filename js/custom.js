@@ -114,7 +114,8 @@ function ajaxFormRequest(form_id, url) {
                     hideShowSection('fcontact2', 'fcontactAfterSend2');
                     break
                 case 'fcallback':
-                    $('#callbackResult').html('<h6>Обратный звонок заказан!</h6>');
+                    $('#fcallback').css('display', 'none');
+                    $('#callbackResult').html('<h5>Спасибо! Заявка успешно отправлена.<br>Мы свяжемся с тобой в ближайшее время.</h5>');
                     break
                 case 'fcallback2':
                     $('#callbackResult2').html('<h6>Обратный звонок заказан!</h6>');
@@ -126,7 +127,6 @@ function ajaxFormRequest(form_id, url) {
                 default:
                     alert('ERROR')
                     break
-
             }
         });
         return false;

@@ -449,66 +449,64 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <div class="modal-title">Наши контакты</div>
+                    <div class="modal-title">НАШИ КОНТАКТЫ</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col mdl_block">
-                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
+                <div class="modal-body modal-body-contact">
+                    <div class="rowContact">
+                        <div class="telArea">
+                            <a href="tel:+380674234567">+38 (067) 423 45 67</a>
                         </div>
-                        <div class="col">
-                            <div class="row mdl_block">
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
-                                </div>
+                        <div class="messengerIcons">
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/whatsappBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/telegramBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/viber-black.png"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col mdl_block">
-                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
+                    <div class="rowContact">
+                        <div class="telArea">
+                            <a href="tel:+380671353587">+38 (067) 135 35 87</a>
                         </div>
-                        <div class="col">
-                            <div class="row mdl_block">
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
-                                </div>
+                        <div class="messengerIcons">
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/whatsappBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/telegramBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/viber-black.png"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col mdl_block">
-                            <a href="tel:+380777777777">+38 (077) 777 77 77</a>
+                    <div class="rowContact">
+                        <div class="telArea">
+                            <a href="tel:+380676238547">+38 (067) 623 85 47</a>
                         </div>
-                        <div class="col">
-                            <div class="row mdl_block">
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_telegram.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_viber.svg"></a>
-                                </div>
-                                <div class="col">
-                                    <a href="#"><img alt="" src="./img/icon/black_whatsapp.svg"></a>
-                                </div>
+                        <div class="messengerIcons">
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/whatsappBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/telegramBlack.svg"></a>
+                            </div>
+                            <div class="messIcon">
+                                <a href="#"><img alt="" src="./img/icon/viber-black.png"></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p>Мы работаем без выходных с 9:00 до 19:00</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -534,12 +532,14 @@
                             </div>
                         </div>
                         <div class="form-field col x-100 align-center">
-                            <div id="callbackResult">
+                            <div>
                                 <button class="boot" onclick="ajaxFormRequest('fcallback', 'php/form-callback.php')">Отправить</button>
                                 <p>Мы свяжемся с тобой в ближайшее время.</p>
                             </div>
                         </div>
                     </form>
+                    <div id="callbackResult"></div>
+
                 </div>
             </div>
         </div>
