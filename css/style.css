@@ -2503,6 +2503,10 @@ footer {
     width: 26px;
 }
 
+.mod-menu {
+    justify-content: end;
+}
+
 
 /* ADEPT DESIGN STYLE */
 
