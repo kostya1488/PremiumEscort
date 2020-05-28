@@ -2457,7 +2457,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 0;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .fcallInp {

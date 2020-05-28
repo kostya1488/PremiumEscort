@@ -1021,7 +1021,7 @@ footer {
 .modal-body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     padding-top: 0;
 }
 
