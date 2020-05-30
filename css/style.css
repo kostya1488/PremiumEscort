@@ -1894,6 +1894,7 @@ input:focus {
 .text-center span {
     font-size: 1rem;
     color: #d3d3d3;
+    white-space: nowrap;
 }
 
 .d-flex {
