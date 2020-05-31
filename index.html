@@ -72,7 +72,6 @@
     </header>
     <!-- Header part end-->
     <!-- Mobile Menu start -->
-    <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
     <div class="modal fade fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999">
         <div class="modal-dialog">
             <div class="modal-content" style="color:#fff;">
@@ -92,11 +91,8 @@
                 </div>
                 <a class="boot boot-mob-menu hh" href="#anketa" data-dismiss="modal">Заполнить анкету</a>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-    <!-- /.fullscreen -->
     <!-- Mobile Menu end -->
     <!-- banner part start-->
     <section id="home" class="banner_part">
@@ -120,7 +116,6 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-xl-7 about_us_text">
-                    <!-- col-lg-6 -->
                     <div class="about_left-side">
                         <div class="section_tittle">О нашем агентстве</div>
                         <div class="about_line"></div>
@@ -260,7 +255,6 @@
                     </div>
                 </div>
             </div>
-            <!-- ./row -->
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <div class="section-subtittle  pt-sm-4 text-center">
@@ -278,7 +272,6 @@
                 </div>
             </div>
         </div>
-        <!-- ./container -->
     </section>
     <hr>
     <!-- "Наши преимущества" end -->
@@ -610,9 +603,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- /.panel-group -->
             </div>
-            <!-- /.col-md-offset-3 col-md-6 -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
@@ -840,13 +831,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="text-center contact-tittle mt-5">Напиши нам</div> -->
             <div id="writeToUs" class="writeToUs section_tittle text-center">
                 Напиши нам
             </div>
             <div class="row justify-content-center text-center">
                 <div id="fcontactAfterSend" class="feature_part">
-                    <!-- <div class="container"> -->
                     <div class="sendmess row justify-content-center">
                         <div class="text-center">
                             Спасибо! Сообщение успешно отправлено. <br> Мы скоро ответим.
@@ -856,7 +845,6 @@
                         </div>
                     </div>
 
-                    <!-- </div> -->
                 </div>
                 <form id="fcontact" class="col-md-8 col-sm-12 anketa">
                     <div class="row">
@@ -1016,106 +1004,6 @@
             </div>
         </div>
     </div>
-    <!-- Modal "Заполнить анкету" -->
-    <!-- <div class="modal fade" id="ModalAnketa">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">Анкета</div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body text-center">
-                    <form id="fprofile-modal" action="php/form-profile.php" method="post" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col">
-                                <input name="name" placeholder="Имя" type="text" required>
-                                <input name="phone" placeholder="Телефон" type="password" required>
-                                <input name="city" placeholder="Город проживания" type="text" required>
-                            </div>
-                            <div class="col">
-                                <input name="age" placeholder="Возраст (18+)" type="text" required>
-                                <input name="insta" placeholder="Instagram (необязательно)" type="text">
-                                <label>Есть ли опыт?</label><br>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="exp" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Да</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="exp" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">Нет</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-h text-center">Добавь пару своих фото</div><br>
-                        <div class="row justify-content-center">
-                            <div class="col-5">
-                                Фото в полный рост
-                                <input id="filemodal1" type="file" name="file[]" class="inputfile" />
-                                <label for="filemodal1"><img alt="" src="./img/icon/file-bg.svg"></label>
-                            </div>
-                            <div class="col-5">
-                                Фото с других ракурсов
-                                <input id="filemodal2" type="file" name="file[]" class="inputfile" />
-                                <label for="filemodal2"><img alt="" src="./img/icon/file-bg.svg"></label>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="profileModalResult"><button class="boot" type="button" onclick="ajaxFormRequest('profileModalResult', 'fprofile-modal', 'php/form-profile.php')">Отправить</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Vertical NavBar start -->
-    <!-- <nav id="cd-vertical-nav">
-        <ul>
-            <li>
-                <a class="hh is-selected" href="#home" data-number="1">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">ГЛАВНАЯ</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#about" data-number="2">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">ОБ АГЕНТСТВЕ</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#why" data-number="3">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">ПОЧЕМУ МЫ?</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#requirements" data-number="4">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">ТРЕБОВАНИЯ</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#faq" data-number="5">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">FAQ</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#reviews" data-number="6">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">ОТЗЫВЫ</span>
-                </a>
-            </li>
-            <li>
-                <a class="hh" href="#contacts" data-number="7">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">КОНТАКТЫ</span>
-                </a>
-            </li>
-        </ul>
-    </nav> -->
-    <!-- Vertical NavBar end
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
@@ -1125,13 +1013,3 @@
 </body>
 
 </html>
-<!-- owl carousel js
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script> -->
-<!-- custom js
-<script src="js/back.to.top.js"></script>
-<script src="js/fixed.menu.js"></script>
-<script src="js/hide.tag.js"></script>
-<script src="js/imput-file.js"></script>
-<script src="js/icons-right.js"></script>
-<script src="js/block.backlight.js"></script> -->
