@@ -1344,7 +1344,7 @@ body::-webkit-scrollbar-button {
     }
     
     .comment_person {
-        width: auto;
+        /* width: auto; */
         max-width: 90%!important;
     }
     
@@ -2404,7 +2404,7 @@ footer {
     
     .section_tittle {
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 28px;
     }
     
     .about_us .about_us_text p {
@@ -3195,7 +3195,7 @@ footer {
     }
     
     .comment_person {
-        width: auto;
+        /* width: auto; */
         max-width: 85%!important;
     }
     

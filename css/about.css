@@ -1093,10 +1093,10 @@
         .section-subtittle {
             font-size: 1rem;
         }
-        .social_link li {
+        /* .social_link li {
             padding: 4%;
             !important;
-        }
+        } */
         .fa-2x {
             font-size: 1.5rem!important;
         }
@@ -1253,9 +1253,9 @@
         .section-subtittle {
             font-size: 15px;
         }
-        .social_link li {
+        /* .social_link li {
             padding: 3%;
-        }
+        } */
         .footer p {
             font-size: 10px;
         }
@@ -1293,9 +1293,9 @@
         .navbar-collapse {
             top: 50px!important;
         }
-        .social_link li {
+        /* .social_link li {
             padding: 5%;
-        }
+        } */
         .mob-menu-icons {
             margin-right: 0px;
         }
