@@ -58,8 +58,7 @@ canvas {
 
 .content span {
     font-size: 12rem;
-    line-height: 90%;
-    /*    text-shadow: 10px 10px 5px rgba(0,0,0,0.5); */
+    line-height: 90%
 }
 
 .content p {
