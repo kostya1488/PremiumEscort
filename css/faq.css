@@ -93,6 +93,12 @@ button:focus,
 
 h1,
 h2 {
+    white-space: nowrap;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.section_tittle h2 {
     font-weight: 300;
 }
 
