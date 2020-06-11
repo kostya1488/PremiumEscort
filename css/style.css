@@ -78,6 +78,11 @@ ul {
     padding: 0;
 }
 
+.section_tittle h2,
+.section_tittle h3 {
+    font-weight: 300;
+}
+
 
 /* ScrollBar Style */
 
@@ -1269,8 +1274,12 @@ input:focus {
     font-weight: bold;
     line-height: 12px;
     margin-top: 38%;
-    padding: 4px 0px 34px 20px;
+    padding: 4px 0px 24px 20px;
     border-left: 4px solid #d0bc89;
+}
+
+.main-head-text h1 {
+    font-size: 24.2px;
 }
 
 .main-head-text p {

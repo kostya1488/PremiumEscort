@@ -584,6 +584,11 @@ input:focus {
     display: none;
 }
 
+h1,
+h2 {
+    font-weight: 300;
+}
+
 
 /**************** banner part css start ****************/
 

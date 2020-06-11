@@ -91,6 +91,11 @@ button:focus,
     color: #d3d3d3;
 }
 
+h1,
+h2 {
+    font-weight: 300;
+}
+
 
 /* ScrollBar Style */
 
