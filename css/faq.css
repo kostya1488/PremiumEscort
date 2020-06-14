@@ -93,7 +93,6 @@ button:focus,
 
 h1,
 h2 {
-    white-space: nowrap;
     font-size: 40px;
     font-weight: 400;
 }
@@ -557,7 +556,7 @@ input:focus {
     position: absolute;
     top: 28%;
     left: 7.5%;
-    max-width: 25%;
+    max-width: 40%;
     padding: 4px 0px 22px 20px;
     border-left: 4px solid #d0bc89;
 }
@@ -643,7 +642,7 @@ input:focus {
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(to top, black 0%, transparent 70%), url(../img/head_faq.jpg);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100% auto;
     background-position: center;
 }
@@ -1320,7 +1319,7 @@ footer {
 
 @media (max-width: 991px) {
     .banner_part {
-        height: calc(100vh - 60px);
+        background-size: auto 100%;
     }
     .social-icons {
         display: unset
