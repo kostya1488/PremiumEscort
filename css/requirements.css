@@ -312,7 +312,7 @@ input:focus {
     z-index: -1;
 }
 
-.inputfile+label {
+.inputfile_label {
     cursor: pointer;
     padding: 30px;
     border: #000 solid 1px;
@@ -320,7 +320,7 @@ input:focus {
     display: inline-block;
 }
 
-.inputfile+label img {
+.input_bg_img {
     width: 50%;
 }
 
