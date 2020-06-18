@@ -1070,6 +1070,9 @@ footer {
 }
 
 @media (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+    }
     hr {
         max-width: 20%;
         display: block;
